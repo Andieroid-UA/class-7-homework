@@ -1,4 +1,5 @@
 //Create a facade between implementation of fetch and the api inside of GetUsers
+console.groupCollapsed('Exercise 2');
 function getUsers() {
     return getFetch('https://jsonplaceholder.typicode.com/users')
 }
@@ -36,6 +37,8 @@ function getFetch(url, params = {}) {
         params: params
     }).then(res => res.data)
 }
+
+console.groupEnd();
 
 /*
 //Clean, nice code
