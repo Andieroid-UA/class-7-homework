@@ -38,6 +38,9 @@ function getFetch(url, params = {}) {
     }).then(res => res.data)
 }
 
+//I understand not the best solution, but a place-holder for now
+console.log(users);
+
 console.groupEnd();
 
 /*
